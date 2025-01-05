@@ -5,4 +5,9 @@ public class UserRegistration {
         String regex = "^[A-Z][a-zA-Z]{2,}$"; // Starts with uppercase and at least 3 characters
         return firstName.matches(regex);
     }
+
+    public boolean validateLastName(String lastName) {
+        String regex = "^[A-Z][a-zA-Z]{2,}$"; // Starts with uppercase and at least 3 characters
+        return lastName.matches(regex);
+    }
 }
