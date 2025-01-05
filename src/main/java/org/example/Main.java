@@ -7,11 +7,15 @@ public class Main {
         UserRegistration userRegistration = new UserRegistration();
         // Test the method
         System.out.println("First Name Validation:");
-        System.out.println(userRegistration.validateFirstName("John")); // Should return true
-        System.out.println(userRegistration.validateFirstName("jo"));   // Should return false
+        System.out.println(userRegistration.validateFirstName("Jack")); // Should return true
+        System.out.println(userRegistration.validateFirstName("jil"));   // Should return false
 
         System.out.println("Last Name Validation:");
-        System.out.println(userRegistration.validateLastName("Doe"));  // Should return true
-        System.out.println(userRegistration.validateLastName("do"));   // Should return false
+        System.out.println(userRegistration.validateLastName("Daneil"));  // Should return true
+        System.out.println(userRegistration.validateLastName("das"));   // Should return false
+        System.out.println("Email Validation:");
+        System.out.println(userRegistration.validateEmail("abc.xyz@bl.co.in")); // Should return true
+        System.out.println(userRegistration.validateEmail("abc@.com.my"));     // Should return false
+
     }
 }
