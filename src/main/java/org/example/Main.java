@@ -9,5 +9,9 @@ public class Main {
         System.out.println("First Name Validation:");
         System.out.println(userRegistration.validateFirstName("John")); // Should return true
         System.out.println(userRegistration.validateFirstName("jo"));   // Should return false
+
+        System.out.println("Last Name Validation:");
+        System.out.println(userRegistration.validateLastName("Doe"));  // Should return true
+        System.out.println(userRegistration.validateLastName("do"));   // Should return false
     }
 }
