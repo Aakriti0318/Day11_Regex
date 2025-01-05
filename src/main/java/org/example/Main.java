@@ -20,7 +20,7 @@ public class Main {
 
         System.out.println("Mobile Number Validation:");
         System.out.println(userRegistration.validateMobileNumber("91 9919898801")); // Should return true
-        System.out.println(userRegistration.validateMobileNumber("91 8410919801"));  // Should return false
+        System.out.println(userRegistration.validateMobileNumber("918410919801"));  // Should return false
         // Test Password
         System.out.println("Password Validation:");
         System.out.println(userRegistration.validatePassword("Xyz@1234")); // Should return true
