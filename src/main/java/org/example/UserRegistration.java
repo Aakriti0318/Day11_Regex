@@ -1,5 +1,6 @@
 package org.example;
-
+import java.util.ArrayList;
+import java.util.List;
 public class UserRegistration {
     public boolean validateFirstName(String firstName) {
         String regex = "^[A-Z][a-zA-Z]{2,}$"; // Starts with uppercase and at least 3 characters
@@ -25,6 +26,13 @@ public class UserRegistration {
         String rule4 = "(?=.*[@#$%^&+=!]).*"; // At least one special character
 
         return (password.matches(rule1) && password.matches(rule2) && password.matches(rule3) && password.matches(rule4));
+    }
+    public List<Boolean> validateEmailSamples(List<String> emails) {
+        List<Boolean> results = new ArrayList<>();
+        for (String email : emails) {
+            results.add(validateEmail(email));
+        }
+        return results;
     }
 
 }
