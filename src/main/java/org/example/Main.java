@@ -17,5 +17,8 @@ public class Main {
         System.out.println(userRegistration.validateEmail("abc.xyz@bl.co.in")); // Should return true
         System.out.println(userRegistration.validateEmail("abc@.com.my"));     // Should return false
 
+        System.out.println("Mobile Number Validation:");
+        System.out.println(userRegistration.validateMobileNumber("91 9919898801")); // Should return true
+        System.out.println(userRegistration.validateMobileNumber("91 8410919801"));  // Should return false
     }
 }
